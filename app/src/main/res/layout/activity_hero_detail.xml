@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/imageViewHero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/hero_photo_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewNameHero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mol"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewHero" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionIntelligence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:text="@string/intelligence_text"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNameHero" />
+
+        <TextView
+            android:id="@+id/textViewIntelligence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewDescriptionIntelligence"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNameHero" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:text="@string/speed_text"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionStrength" />
+
+        <TextView
+            android:id="@+id/textViewSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewDescriptionSpeed"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStrength" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionDurability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:text="@string/durability_text"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionSpeed" />
+
+        <TextView
+            android:id="@+id/textViewDurability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewDescriptionDurability"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpeed" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:text="@string/power_text"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionDurability" />
+
+        <TextView
+            android:id="@+id/textViewPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewDescriptionPower"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDurability" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionCombat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mol"
+            android:text="@string/combat_text"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionPower" />
+
+        <TextView
+            android:id="@+id/textViewCombat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewDescriptionCombat"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPower" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:text="@string/strength_text"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionIntelligence" />
+
+        <TextView
+            android:id="@+id/textViewStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/mol"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewDescriptionStrength"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIntelligence" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
